@@ -11,6 +11,7 @@ import 'package:foodly_ui/cart/cart.dart';
 import 'package:foodly_ui/const/raw_string.dart';
 import 'package:foodly_ui/entry_point.dart';
 import 'package:foodly_ui/menuItems/menuItems.dart';
+import 'package:foodly_ui/orders/orders.dart';
 import 'package:foodly_ui/text/text_builder.dart';
 import 'package:foodly_ui/utils/url_launch.dart';
 
@@ -126,6 +127,23 @@ class _DrawerMenuState extends State<DrawerMenu> {
                               color: Colors.black, size: 20),
                           title: const TextBuilder(
                               text: "Add Menu Item",
+                              fontSize: 20.0,
+                              fontWeight: FontWeight.w600,
+                              color: Colors.black),
+                        ),
+                        ListTile(
+                          onTap: () {
+                            // UrlLaunch.launchInBrowser(
+                            //     urlString: RawString.gitHubRepo);
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (_) => const Orders()));
+                          },
+                          leading: const Icon(Icons.source,
+                              color: Colors.black, size: 20),
+                          title: const TextBuilder(
+                              text: "Orders",
                               fontSize: 20.0,
                               fontWeight: FontWeight.w600,
                               color: Colors.black),

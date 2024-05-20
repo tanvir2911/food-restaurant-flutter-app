@@ -58,7 +58,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     ),
                   );
                 },
-                child: Text("Let Starting to HewKai".toUpperCase()),
+                child: Text("Let's fill your hunger..".toUpperCase()),
               ),
             ),
             const Spacer(),
