@@ -2,10 +2,10 @@
 final List<String> demoRestaurantNames = [
   "Sultan's Dine",
   "kacci vai",
-  "নান্না বিরিয়ানি",
-  "ไก่ทอดร้านนี้ กินแล้วรวย สวยหล่อ",
-  "ไก่ทอดข้างทาง อุุดหนุนป้าหน่อย",
-  "ควยหีแตด"
+  "Nanna's Biriyani",
+  "Hazi's Biriyani",
+  "Boba's Biriyani",
+  "Beauty's Lassi"
   // Add more restaurant names here as needed
 ];
 
@@ -32,35 +32,35 @@ List<String> demoBigImages = [
 
 List<Map<String, dynamic>> demoMediumCardData = [
   {
-    "name": "บ้านไก่เกาหลี อร่อยกว่าบอนชอน",
+    "name": "Shahi Masala",
     "image": "assets/images/ไก่ทอดคลุกซอสเกาหลี.png",
     "location": "อโศก, กรุงเทพ",
     "rating": 8.6,
     "delivertTime": 20,
   },
   {
-    "name": "ไก่ทอด หาดหย่าย สูตรเด็ด เจ้าดัง",
+    "name": "Shahi Masala",
     "image": "assets/images/ไก่ทอดหาดใหญ่.png",
     "location": "นานา, กรุงเทพ",
     "rating": 9.1,
     "delivertTime": 35,
   },
   {
-    "name": "ไก่ทอด ลุงพล ป้าแต๋น",
+    "name": "Shahi Masala",
     "image": "assets/images/ไก่ทอดซอสน้ำปลา.png",
     "location": "ชิดลม, กรุงเทพ",
     "rating": 7.3,
     "delivertTime": 25,
   },
   {
-    "name": "ไก่ทอดร้านนี้ กินแล้วรวย สวยหล่อ",
+    "name": "Shahi Masala",
     "image": "assets/images/ข้าวหมกไก่ทอด.png",
     "location": "ทองหล่อ, กรุงเทพ",
     "rating": 8.4,
     "delivertTime": 30,
   },
   {
-    "name": "ไก่ทอดข้างทาง อุุดหนุนป้าหน่อย",
+    "name": "Shahi Masala",
     "image": "assets/images/ปีกไก่ทอด.png",
     "location": "มศว, กรุงเทพ",
     "rating": 9.5,

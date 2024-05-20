@@ -18,6 +18,29 @@ class Body extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const SizedBox(height: defaultPadding),
+              Container(
+                padding: const EdgeInsets.all(8.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(9999.0),
+                  child: FittedBox(
+                    fit: BoxFit.cover,
+                    child: Image.network(
+                      FirebaseAuth.instance.currentUser?.photoURL ??
+                          'https://static.vecteezy.com/system/resources/thumbnails/007/522/853/small_2x/business-man-icon-for-your-web-profile-free-vector.jpg',
+                    ),
+                  ),
+                ),
+              ),
+              Center(
+                child: Text(
+                  "Hi,",
+                  style: Theme.of(context).textTheme.headlineMedium,
+                ),
+              ),
+              Center(
+                child: Text("Md. Mozammel Hossain",
+                    style: Theme.of(context).textTheme.headlineMedium),
+              ),
               Text("Account Settings",
                   style: Theme.of(context).textTheme.headlineMedium),
               Text(

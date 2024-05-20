@@ -1,6 +1,5 @@
 import 'dart:convert';
 
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:location/location.dart';
@@ -84,18 +83,18 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         leading: Container(
-          padding: const EdgeInsets.all(8.0),
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(9999.0),
-            child: FittedBox(
-              fit: BoxFit.cover,
-              child: Image.network(
-                FirebaseAuth.instance.currentUser?.photoURL ??
-                    'https://www.ilovejapantours.com/images/easyblog_articles/6/doraemon-gadget-cat-from-the-future-wallpaper-4.jpg',
-              ),
+            // padding: const EdgeInsets.all(8.0),
+            // child: ClipRRect(
+            //   borderRadius: BorderRadius.circular(9999.0),
+            //   child: FittedBox(
+            //     fit: BoxFit.cover,
+            //     child: Image.network(
+            //       FirebaseAuth.instance.currentUser?.photoURL ??
+            //           'https://static.vecteezy.com/system/resources/thumbnails/007/522/853/small_2x/business-man-icon-for-your-web-profile-free-vector.jpg',
+            //     ),
+            //   ),
+            // ),
             ),
-          ),
-        ),
         title: Column(
           children: [
             Text(
