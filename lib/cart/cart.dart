@@ -112,7 +112,11 @@ class _CartState extends State<Cart> {
           minWidth: size.width,
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-          onPressed: _postData,
+          onPressed: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (_) => const MenuItems()));
+            cart.clearCart();
+          },
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
